@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;/Mario&gt;</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
+    <!--CSS-->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/indexStyle.css">
+    
+
+</head>
+<body>
+    <div class="homeContainer">
+        <div class="banner">
+            <div class="title"> 
+                <h1>👋, I'm <span style="color: #4400ff">Mario</span><br>a Java developer</h1>
+                <h2>graphic designer and content creator in the freetime</h2>
+            </div>
+            <div class="img">
+                <img src="style/pic/vibri.png" class="imgBot">
+                <img src="style/pic/propic.png" class="imgTop">
+            </div>
+            
+        </div>
+        <nav>
+            <a onclick="openbox(1)">about</a>
+            <a onclick="openbox(2)">portfolio</a>
+            <a onclick="openbox(3)">socials</a>
+            <a onclick="openbox(4)">mail</a>
+            <a href="https://www.linkedin.com/in/mario-di-marino/">linkedin</a>
+            <a href="style/pdf/resume eng.pdf">resume</a>
+        </nav>
+
+        <div id="card1" class="card">
+            <p>
+                Ehi! My name is Mario. I'm a computer science student of "Università degli studi di Napoli Parthenope". 
+                I'm passionate about IT and the tech world since i was a kid, and i want to make my passion a job.
+                I'm always ready to give the best of me with a great desire to learn.
+                I enjoy playing <a href="https://steamcommunity.com/id/Jaikibababui/">videogames</a>, wasting time on <a href="https://www.behance.net/mariodimarino">graphic design projects</a> and making <a href="https://www.tiktok.com/@xjaiki">videos</a>!
+                <br><span style="font-size: 13px;">Yes i'm a geek.</span>
+            </p>
+        </div>
+
+        <div id="card2" class="portfolio card" hidden>
+            <div class="flex">
+                <div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/jaiki.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>Jaiki</span></div>
+                                <div class="title">type: <span>social project</span></div>
+                                <div class="title">individual project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">In 2021 i started a Tiktok account as an experiment to see how the platform work. 
+                                I've been active on Tiktok, Twitch and Instagram as a videogames content creator with 
+                                more than 120k follower and more than 3M likes on the platform!
+                                In the activity period i also did some ads for variuous company like <a href="https://www.tiktok.com/@xjaiki/video/7081963114186476805">Genshin Impact</a>, 
+                                <a href="https://www.tiktok.com/@xjaiki/video/7006313849322327302?is_copy_url=1&is_from_webapp=v1">Vegue</a> and <a href="https://www.tiktok.com/@xjaiki/video/7036376606302129413?is_copy_url=1&is_from_webapp=v1">Pepper</a>.
+                            </p>
+                            <a href="https://www.tiktok.com/@xjaiki">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/boardboxmaster.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>Boardbox Master</span></div>
+                                <div class="title">type: <span>iOS app</span></div>
+                                <div class="title">group project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">Boardbox Master is a school group project developed at iOS Foundation program
+                                made by Università degli studi di Napoli Parthenope and Apple. This iPhone application is 
+                                a companion app for board games and roleplay games. The goal of the app is to make the 
+                                board games easier to organize and play.
+                            </p>
+                            <a href="https://github.com/xJaiki/BoardBoxMaster">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/campaignON.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>CampaignON</span></div>
+                                <div class="title">type: <span>iOS/tvOS app</span></div>
+                                <div class="title">group project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">CampaignON is the "spirital sequel" of <a onclick="previousSlide(1)">Boardbox Master</a>. This project
+                                was made with a different group at iOS Foundation Program. This application has the same
+                                goal of Boardbox Master but this time there is a total integration with Apple TV to make
+                                the board box and roleplay games experience more easier.
+                            </p>
+                            <a href="https://github.com/xJaiki/CampaignON">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/jaiki2.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>Jaiki branding</span></div>
+                                <div class="title">type: <span>graphic design</span></div>
+                                <div class="title">individual project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">Had fun in the freetime creating a brand identity
+                                for my personal Twitch project, learning how to use After Effects
+                                and Behance.
+                            </p>
+                            <a href="https://www.behance.net/gallery/97344119/Jaiki">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/kiwi.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>Lovely kiwi</span></div>
+                                <div class="title">type: <span>graphic design</span></div>
+                                <div class="title">group project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">This telegram sticker pack was drawn by my girlfriend and
+                                vectorized by me. This project was born to learn some Illustrator basics.
+                            </p>
+                            <a href="https://t.me/addstickers/lovelykiwis">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/otakute.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>Otakute</span></div>
+                                <div class="title">type: <span>graphic design</span></div>
+                                <div class="title">individual project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">Otakute is a little shirt shop hosted on Spreadshirt and Redbubble.
+                                Started in the freetime, I sold more than 50 shirt with my designs on it in all Europe.
+                            </p>
+                            <a href="https://otakute.myspreadshop.it/">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/ginkar.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>Ginkar</span></div>
+                                <div class="title">type: <span>graphic design</span></div>
+                                <div class="title">individual project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">Made a brand identity and Twitch overlay design for my friend 
+                                Ginkar, using Photoshop, Illustrator and After Effects.
+                            </p>
+                            <a href="https://www.behance.net/gallery/96041213/Ginkar">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/dream.png">
+                            <div class="headingText">
+                                <div class="title">name: <span>dream</span></div>
+                                <div class="title">type: <span>social/graphic design</span></div>
+                                <div class="title">group/individual project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">Started a small community online about content creators
+                                and videogames, with an Instagram account and a discord server.
+                                The community part was made in group with my friends, the graphic part 
+                                was made only by me.
+                            </p>
+                            <a href="https://www.instagram.com/dreamprojectig/">Find more...</a>
+                        </div>
+                    </div>
+                    <div class="cardContent">
+                        <div class="heading">
+                            <img src="style/pic/portfolio/Coffebreak.jpg">
+                            <div class="headingText">
+                                <div class="title">name: <span>Coffe Break</span></div>
+                                <div class="title">type: <span>Playground project</span></div>
+                                <div class="title">individual project</div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="space">Playground project made for WWDC 2021 schoolarship competition
+                                Coffee Break is a little top down racing game inspired by the Gran Turismo 4 
+                                mini game Coffee Break.
+                                In this little game you have to drive a the car from the start to the end avoiding 
+                                the obstacles. The game has 3 unique levels.
+                            </p>
+                            <a href="https://github.com/xJaiki/Coffee-Break">Find more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshowBtn">
+                    <a id="back" onclick="previousSlide(1)">Previous</a>
+                    <a onclick="nextSlide(1)">Next</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="card3" class="card" hidden>
+            <div class="socials">
+                <div class="firstRow">
+                    <a href="https://t.me/xJaiki"><img class="container" src="style/pic/social/telegram.png"></a>
+                    <a href="https://steamcommunity.com/id/Jaikibababui/"><img class="container" src="style/pic/social/steam.png"></a>
+                </div>
+                <div class="firstRow">
+                    <a href="https://www.tiktok.com/@xjaiki"><img class="container" src="style/pic/social/tiktok.png"></a>
+                    <a href="https://open.spotify.com/user/1187721300?si=f361ab8d3b974c4b"><img class="container" src="style/pic/social/spotify.png"></a>
+                </div>
+            </div>
+        </div>
+        <div id="card4" class="card" hidden>
+            <div class="mailForm">
+                <form action="https://formsubmit.co/af26edad02f5b9a74e825565d5d9a13a " class="emailbox" method="POST">
+                    <input type="text" name="Name" placeholder="full name" required>
+                    <input type="email" name="Email" placeholder="email" required>
+                    <textarea cols="10" name="Message" placeholder="message" required></textarea>
+                    <button class="prova" type="submit">send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
